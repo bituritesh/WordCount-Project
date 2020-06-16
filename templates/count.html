@@ -1,0 +1,13 @@
+<a href="http://127.0.0.1:8000/wordbox/">Start Over</a>
+<h1>no of words are {{count}}</h1>
+<h1>original text:</h1>
+{{fulltext}}
+<h1>word count</h1>
+{{ worddictionary }}
+<br />
+{% for word,counttotal in sortedwords %}
+<!--key is word and value is counttotal -->
+{{ word }}-----------------------------------------------------------{{ counttotal }}
+<br />
+{% endfor %}
+
